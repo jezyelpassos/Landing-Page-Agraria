@@ -22,4 +22,13 @@ whatsappBtn.addEventListener('click', () => {
     const url = `https://api.whatsapp.com/send?phone=${62996874557}&text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
 });
-  
+
+
+$(document).ready(function() {
+  $("#servicos div").each(function(i) {
+    $(this).delay(400 * i).animate({
+      marginTop: "-=20",
+      opacity: "1"
+    }, 800);
+  });
+});
