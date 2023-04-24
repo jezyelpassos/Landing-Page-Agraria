@@ -142,6 +142,7 @@ footer .footer-right {
     text-align: right;
 }
 
+HEAD
 footer input[type="text"],
 footer input[type="email"],
 footer textarea {
@@ -151,6 +152,18 @@ footer textarea {
     border: none;
     border-radius: 5px;
     font-size: 16px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 0 10px;
+		overflow-x: hidden;
+	}
+	
+	nav {
+		flex-direction: column;
+	}
 }
 
 footer textarea {
@@ -250,6 +263,7 @@ footer button[type="submit"] {
     to {
       transform: scale(1.2);
     }
+
   }
 
 
